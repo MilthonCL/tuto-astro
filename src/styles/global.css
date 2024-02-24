@@ -15,6 +15,11 @@ body {
   box-sizing: border-box;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
@@ -51,7 +56,6 @@ h1 {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .nav-links a:hover,
@@ -73,10 +77,32 @@ h1 {
   }
 
   .nav-links a {
+    text-decoration: none;
     display: inline-block;
     padding: 15px 20px;
   }
   .hamburger {
     display: none;
   }
+}
+
+/* Modo Oscuro */
+html.dark {
+  background-color: #0a4463;
+  color: #fff;
+  /* Barra de scroll */
+  scrollbar-color: #0a4463 #acdbf4;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+.dark a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.transformar {
+  transform: scaleX(); transform-origin: 0 0;
 }
